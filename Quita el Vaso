@@ -1,0 +1,19 @@
+default
+{ 
+ attach(key id)
+    {
+              llSleep(150.0); 
+                llRequestPermissions(id, PERMISSION_ATTACH);
+            }
+    
+    
+    run_time_permissions (integer perm)
+    {
+        if (perm & PERMISSION_ATTACH)
+        {
+            
+            llDetachFromAvatar();
+    }
+    
+}
+}
