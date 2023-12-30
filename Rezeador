@@ -1,0 +1,14 @@
+default
+{
+    state_entry()
+    {
+       llListen(1423,"",NULL_KEY,"");
+    }
+    
+     listen(integer channel, string name, key id, string msg)
+{
+   // llSleep(10.0);
+    llRezObject("vaso", llGetPos() + <0.03,0.0,0.459>, <0.0,0.0,0.0>, <0.0,0.0,0.05,0.05>, 0);
+    
+    }
+}
