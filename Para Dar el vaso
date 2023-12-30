@@ -1,0 +1,28 @@
+default
+{
+
+    touch_start(integer total_number)
+    {    
+        llRequestPermissions( llDetectedKey(0), PERMISSION_ATTACH |PERMISSION_TRIGGER_ANIMATION );
+     }
+    
+    run_time_permissions( integer perm)
+    {
+        
+       
+            
+        llStartAnimation("bucle");
+        llSleep(1.1);
+        llWhisper(1423,"vaso");
+         llStartAnimation("bebida");
+   llAttachToAvatarTemp( ATTACH_LHAND );
+   
+}
+
+
+ 
+        
+           
+       }
+      
+
